@@ -1,18 +1,19 @@
 {
   "name": "7geese",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "The 7Geese command line utility.",
-  "scripts": {
-    "test": ""
-  },
   "bin": {
     "7geese": "lib/7geese.js"
   },
-  "repository": "",
+  "repository": "https://github.com/maxparm/7geese-command-line.git",
   "keywords": [
     "7geese",
     "command"
   ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "7geese.coffee",
   "author": "Maxime Parmentier",
   "license": "BSD",
   "devDependencies": {
@@ -20,7 +21,9 @@
     "inquirer": "~0.3.4",
     "request": "~2.27.0",
     "underscore": "~1.5.2",
-    "chalk": "~0.2.1",
-    "querystring": "~0.2.0"
+    "chalk": "~0.2.1"
+  },
+  "engines": {
+    "node": ">=0.2.0"
   }
 }
