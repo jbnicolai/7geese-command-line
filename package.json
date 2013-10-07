@@ -1,0 +1,26 @@
+{
+  "name": "7geese",
+  "version": "0.0.1",
+  "description": "The 7Geese command line utility.",
+  "scripts": {
+    "test": ""
+  },
+  "bin": {
+    "7geese": "lib/7geese.js"
+  },
+  "repository": "",
+  "keywords": [
+    "7geese",
+    "command"
+  ],
+  "author": "Maxime Parmentier",
+  "license": "BSD",
+  "devDependencies": {
+    "commander": "~2.0.0",
+    "inquirer": "~0.3.4",
+    "request": "~2.27.0",
+    "underscore": "~1.5.2",
+    "chalk": "~0.2.1",
+    "querystring": "~0.2.0"
+  }
+}
