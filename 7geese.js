@@ -20,7 +20,7 @@
     error = chalk.bold.red;
     app = {
       config: {
-        baseUrl: 'http://localhost:8000',
+        baseUrl: 'https://www.7geese.com',
         oauth: null
       },
       oauth: null
@@ -56,6 +56,7 @@
           data = {};
         }
         if (data.config == null) {
+          console.log("You need to enter the information of your application: https://www.7geese.com/account/applications/");
           return inquirer.prompt([
             {
               type: 'input',

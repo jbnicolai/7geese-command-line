@@ -57,6 +57,7 @@ module.exports = ->
             catch e
                 data = {}
             if not data.config?
+                console.log "You need to enter the information of your application: https://www.7geese.com/account/applications/"
                 inquirer.prompt([
                     type: 'input'
                     name: 'client_id'
