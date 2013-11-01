@@ -221,6 +221,7 @@
         }
       });
     };
+    console.log('7geese');
     return connectedUser(function() {
       var krs;
       if (program.objective && program.message) {

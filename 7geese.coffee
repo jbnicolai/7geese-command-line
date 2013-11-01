@@ -6,17 +6,17 @@ fs = require('fs')
 _ = require('underscore')
 
 
-module.exports = ->
-
-    # Variables
-    success = chalk.bold.green
-    error = chalk.bold.red
-    app =
-        config:
-            baseUrl: 'https://www.7geese.com'
-            oauth: null
+# Variables
+success = chalk.bold.green
+error = chalk.bold.red
+app =
+    config:
+        baseUrl: 'https://www.7geese.com'
         oauth: null
+    oauth: null
 
+
+module.exports = ->
 
     # Helpers Function
     getFormattedValue = (value, type) ->
@@ -33,6 +33,9 @@ module.exports = ->
         else
             value
 
+    keyresults = (val) ->
+        val.split(',')
+
 
     # Welcome Message
     console.log chalk.bold.bgGreen("=== Welcome to the 7Geese command line utility ===")
@@ -40,7 +43,6 @@ module.exports = ->
 
 
     # Initial
-    keyresults = (val) -> return val.split(',')
     program
         .version('0.0.1')
         .option('-m, --message <n>', 'Add a message')
